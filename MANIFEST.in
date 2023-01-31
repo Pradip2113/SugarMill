@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sugarmill *.css
+recursive-include sugarmill *.csv
+recursive-include sugarmill *.html
+recursive-include sugarmill *.ico
+recursive-include sugarmill *.js
+recursive-include sugarmill *.json
+recursive-include sugarmill *.md
+recursive-include sugarmill *.png
+recursive-include sugarmill *.py
+recursive-include sugarmill *.svg
+recursive-include sugarmill *.txt
+recursive-exclude sugarmill *.pyc
