@@ -1,0 +1,330 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-01 11:44:30.136433",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_information_section",
+  "token_number",
+  "date",
+  "slip_number",
+  "plot_number",
+  "shift_number",
+  "column_break_mklov",
+  "supplier_name",
+  "village",
+  "group",
+  "supplier_type",
+  "column_break_xkwh8",
+  "sugarcane__type",
+  "crop_type",
+  "irrigation",
+  "section_break_u26be",
+  "distance_information_column",
+  "survey_number",
+  "distance_type",
+  "distance",
+  "diesel",
+  "vehicle_type",
+  "column_break_qrbf9",
+  "weight",
+  "sugarcane__weight",
+  "weight_without_sugarcane",
+  "ba_material",
+  "total_weight",
+  "section_break_babal",
+  "column_break_dzihy",
+  "vehicle_drivers",
+  "todnidar",
+  "vehicle_number_1",
+  "vehicle_number_2",
+  "column_break_1xyhf",
+  "bailgadi_mukadum",
+  "bailgadi",
+  "section_break_lneip",
+  "factory_name",
+  "slip_boy",
+  "remark",
+  "column_break_e41so",
+  "first_trailer_number",
+  "first_wire_rope_number",
+  "column_break_ioref",
+  "second_trailer_number",
+  "second_wire_rope_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_information_section",
+   "fieldtype": "Section Break",
+   "label": "General Information"
+  },
+  {
+   "fieldname": "token_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Token Number",
+   "options": "Agri Plantations",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "slip_number",
+   "fieldtype": "Float",
+   "label": "Slip Number"
+  },
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Float",
+   "label": "Plot Number"
+  },
+  {
+   "fieldname": "shift_number",
+   "fieldtype": "Select",
+   "label": "Shift Number",
+   "options": "08:00 AM TO 04:00 PM\n04:00 PM TO 12:00 AM"
+  },
+  {
+   "fieldname": "column_break_mklov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "token_number.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Link",
+   "label": "Supplier Name",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "token_number.village",
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Data",
+   "label": "Group"
+  },
+  {
+   "fetch_from": "token_number.supplier__type",
+   "fieldname": "supplier_type",
+   "fieldtype": "Data",
+   "label": "Supplier Type"
+  },
+  {
+   "fieldname": "column_break_xkwh8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sugarcane__type",
+   "fieldtype": "Link",
+   "label": "Sugarcane  Type",
+   "options": "Sugarcane Master"
+  },
+  {
+   "fieldname": "crop_type",
+   "fieldtype": "Select",
+   "label": "Crop Type",
+   "options": "Pre-sesonal\nSeasonal"
+  },
+  {
+   "fetch_from": "token_number.irrigation",
+   "fieldname": "irrigation",
+   "fieldtype": "Data",
+   "label": "Irrigation"
+  },
+  {
+   "fieldname": "section_break_u26be",
+   "fieldtype": "Section Break",
+   "label": "Input Information"
+  },
+  {
+   "fieldname": "distance_information_column",
+   "fieldtype": "Column Break",
+   "label": "Distance Information"
+  },
+  {
+   "fetch_from": "token_number.survey_number",
+   "fieldname": "survey_number",
+   "fieldtype": "Float",
+   "label": "Survey Number"
+  },
+  {
+   "fieldname": "distance_type",
+   "fieldtype": "Data",
+   "label": "Distance Type"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Data",
+   "label": "Distance"
+  },
+  {
+   "fieldname": "diesel",
+   "fieldtype": "Data",
+   "label": "Diesel"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Data",
+   "label": "Vehicle Type"
+  },
+  {
+   "fieldname": "column_break_qrbf9",
+   "fieldtype": "Column Break",
+   "label": "Weight  Information"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight "
+  },
+  {
+   "fieldname": "sugarcane__weight",
+   "fieldtype": "Data",
+   "label": " Sugarcane  weight"
+  },
+  {
+   "fieldname": "weight_without_sugarcane",
+   "fieldtype": "Data",
+   "label": "Weight without Sugarcane"
+  },
+  {
+   "fieldname": "ba_material",
+   "fieldtype": "Data",
+   "label": "Ba. Material"
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Data",
+   "label": "Total Weight"
+  },
+  {
+   "fieldname": "section_break_babal",
+   "fieldtype": "Section Break",
+   "label": "Tranportation  Information"
+  },
+  {
+   "fieldname": "column_break_dzihy",
+   "fieldtype": "Column Break",
+   "label": "Vehicle Information"
+  },
+  {
+   "fieldname": "vehicle_drivers",
+   "fieldtype": "Data",
+   "label": "Vehicle Drivers"
+  },
+  {
+   "fieldname": "todnidar",
+   "fieldtype": "Data",
+   "label": "Todnidar"
+  },
+  {
+   "fieldname": "vehicle_number_1",
+   "fieldtype": "Data",
+   "label": "Vehicle Number 1"
+  },
+  {
+   "fieldname": "vehicle_number_2",
+   "fieldtype": "Data",
+   "label": "Vehicle Number 2"
+  },
+  {
+   "fieldname": "column_break_1xyhf",
+   "fieldtype": "Column Break",
+   "label": "Bailgadi Information"
+  },
+  {
+   "fieldname": "bailgadi_mukadum",
+   "fieldtype": "Data",
+   "label": "Bailgadi Mukadum"
+  },
+  {
+   "fieldname": "bailgadi",
+   "fieldtype": "Data",
+   "label": "Bailgadi"
+  },
+  {
+   "fieldname": "section_break_lneip",
+   "fieldtype": "Section Break",
+   "label": "Trailer Information"
+  },
+  {
+   "fieldname": "factory_name",
+   "fieldtype": "Data",
+   "label": "Factory Name "
+  },
+  {
+   "fieldname": "slip_boy",
+   "fieldtype": "Data",
+   "label": "Slip Boy"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_e41so",
+   "fieldtype": "Column Break",
+   "label": "First Trailer Information"
+  },
+  {
+   "fieldname": "first_trailer_number",
+   "fieldtype": "Data",
+   "label": "First Trailer Number"
+  },
+  {
+   "fieldname": "first_wire_rope_number",
+   "fieldtype": "Data",
+   "label": "First Wire rope Number"
+  },
+  {
+   "fieldname": "column_break_ioref",
+   "fieldtype": "Column Break",
+   "label": "Second Trailer Information"
+  },
+  {
+   "fieldname": "second_trailer_number",
+   "fieldtype": "Data",
+   "label": "Second Trailer Number"
+  },
+  {
+   "fieldname": "second_wire_rope_number",
+   "fieldtype": "Data",
+   "label": "Second Wire rope Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-01 13:53:31.490192",
+ "modified_by": "Administrator",
+ "module": "SugarMill",
+ "name": "Weight Bridge",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
