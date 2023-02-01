@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-01-31 18:24:06.572389",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_name",
+  "supplier__type",
+  "village",
+  "survey_number",
+  "area",
+  "column_break_lchtk",
+  "date",
+  "season",
+  "from_number",
+  "cultivation",
+  "column_break_lo7gh",
+  "variety",
+  "irrigation",
+  "road_touch",
+  "mobile_number",
+  "aadhar_number",
+  "section_break_ulmbk",
+  "my_location",
+  "column_break_xmxfs",
+  "longitude",
+  "latitude",
+  "column_break_0myee",
+  "city",
+  "state"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Link",
+   "label": "Supplier Name",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "survey_number",
+   "fieldtype": "Data",
+   "label": "Survey Number"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Select",
+   "label": "Season ",
+   "options": "Pre - Seasonal\nSeasonal\nAdsali"
+  },
+  {
+   "fieldname": "column_break_lchtk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_number",
+   "fieldtype": "Data",
+   "label": "From Number"
+  },
+  {
+   "fieldname": "cultivation",
+   "fieldtype": "Select",
+   "label": "Cultivation ",
+   "options": "Plantation\nRouting\nRe- Routing"
+  },
+  {
+   "fieldname": "variety",
+   "fieldtype": "Data",
+   "label": "Variety "
+  },
+  {
+   "fieldname": "irrigation",
+   "fieldtype": "Select",
+   "label": "Irrigation ",
+   "options": "River\nBorewell\nCanal"
+  },
+  {
+   "fieldname": "road_touch",
+   "fieldtype": "Select",
+   "label": "Road touch",
+   "options": "Yes\nNo"
+  },
+  {
+   "fetch_from": "supplier_name.mobile_no",
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "aadhar_number",
+   "fieldtype": "Data",
+   "label": "Aadhar Number"
+  },
+  {
+   "fieldname": "column_break_lo7gh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "supplier_name.supplier_group",
+   "fieldname": "supplier__type",
+   "fieldtype": "Data",
+   "label": "Supplier  Type"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "options": "Today"
+  },
+  {
+   "fieldname": "section_break_ulmbk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "my_location",
+   "fieldtype": "HTML",
+   "label": "My Location"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "column_break_xmxfs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_0myee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-31 19:02:38.377642",
+ "modified_by": "Administrator",
+ "module": "SugarMill",
+ "name": "Agri Plantation",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
