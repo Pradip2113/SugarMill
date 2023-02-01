@@ -94,8 +94,9 @@
   },
   {
    "fieldname": "variety",
-   "fieldtype": "Data",
-   "label": "Variety "
+   "fieldtype": "Link",
+   "label": "Variety ",
+   "options": "Sugarcane Master"
   },
   {
    "fieldname": "irrigation",
@@ -165,7 +166,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-01 10:49:52.911643",
+ "modified": "2023-02-01 13:08:01.841050",
  "modified_by": "Administrator",
  "module": "SugarMill",
  "name": "Agri Plantations",
